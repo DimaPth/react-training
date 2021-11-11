@@ -23,7 +23,7 @@ const Favorite = () => {
         <>
           <div style={{ textAlign: "end", marginBottom: "40px", marginRight: "40px" }}>
             <Button type="primary" danger shape="round" onClick={() => handleClick()}>
-              Очистить
+              Clear
             </Button>
           </div>
           <Row gutter={[0, 30]}>
