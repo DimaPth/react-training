@@ -6,32 +6,32 @@ import SignUp from "./components/login/SignUp";
 
 export const publicRoutes = [
 	{
-		path: "/react-training/",
+		path: "/",
 		exact: true,
 		component: <MovieList />,
 	},
 	{
-		path: "/react-training/login",
+		path: "/login",
 		component: <Login />,
 	},
 	{
-		path: "/react-training/register",
+		path: "/register",
 		component: <SignUp />,
 	},
 ];
 
 export const privateRoutes = [
 	{
-		path: "/react-training/",
+		path: "/",
 		exact: true,
 		component: <MovieList />,
 	},
 	{
-		path: "/react-training/movie/:id",
+		path: "/movie/:id",
 		component: <MovieCard />,
 	},
 	{
-		path: "/react-training/favorite",
+		path: "/favorite",
 		component: <Favorite />,
 	},
 ];
