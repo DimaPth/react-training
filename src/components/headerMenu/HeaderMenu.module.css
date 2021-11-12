@@ -1,15 +1,14 @@
 .wrap {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .search {
-	max-width: 1024px;
-	padding: 0 40px;
+  max-width: 1024px;
+  padding: 0 40px;
 }
 
 .icon {
-	padding: 0px 10px;
-	cursor: pointer;
+  padding: 0px 10px;
 }

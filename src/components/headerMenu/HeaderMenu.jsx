@@ -77,11 +77,10 @@ const HeaderMenu = () => {
             />
           </div>
         ) : (
-          <LoginOutlined
-            className={style.icon}
-            style={{ fontSize: "22px", color: "azure" }}
-            onClick={() => push("/login")}
-          />
+          <div style={{ display: "flex", alignItems: "center", cursor: "pointer" }} onClick={() => push("/login")}>
+            <div style={{ color: "white" }}>Login</div>
+            <LoginOutlined className={style.icon} style={{ fontSize: "22px", color: "azure" }} />
+          </div>
         )}
         <HeartTwoTone
           className={style.icon}
