@@ -1,1 +1,1 @@
-# Getting Started with Create React App
+https://dimapth.github.io/react-training/
