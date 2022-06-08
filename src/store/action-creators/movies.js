@@ -14,15 +14,15 @@ export const getMovies = (search = "Enemy", page = 1, type = "") => {
 	return async (dispatch) => {
 		try {
 			dispatch(fetchMovies());
-			const response = await axios.get("https://movie-database-imdb-alternative.p.rapidapi.com/", {
+			const response = await axios.get('https://movie-database-alternative.p.rapidapi.com/', {
 				params: {
 					page: page,
 					s: search,
 					type: type,
 				},
 				headers: {
-					"x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com",
-					"x-rapidapi-key": "597c815aa4msh28d92088334d0eap1a133cjsnace39729c4ac",
+					'X-RapidAPI-Host': 'movie-database-alternative.p.rapidapi.com',
+					'X-RapidAPI-Key': '597c815aa4msh28d92088334d0eap1a133cjsnace39729c4ac'
 				},
 			});
 			dispatch(fetchMoviesSuccess(response.data.Response && response.data.Search));
